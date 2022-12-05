@@ -1,7 +1,20 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import MainDashboard from '@src/pages/MainDashboard';
+import NotFound from '@src/pages/MainDashboard';
+import { Global } from '@emotion/react';
+import reset from '@src/style/reset';
+import common from '@src/style/common';
+
 function App() {
   return (
     <div className="App">
-     
+      <Global styles={[common, reset]} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainDashboard/>}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
