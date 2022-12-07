@@ -236,6 +236,9 @@ const StyledGaugeMonitoringPannel = styled.div`
 `
 
 const GaugeMonitoringPannel = () => {
+    const onChange = (checked: boolean) => {
+        console.log(`switch to ${checked}`);
+      };
     return(
         <StyledGaugeMonitoringPannel>
             <PannelBoxFrame/>
@@ -245,10 +248,14 @@ const GaugeMonitoringPannel = () => {
                         <img src={"/image/title.png"} alt="" />
                         <span>GAUGE MONITORING</span>
                     </div>
-                    <div className="icon-box">
-                        <BoxFrame/>
-                       <FontAwesomeIcon icon={faRotate} />
-                    </div>
+                        <ConfigProvider theme={{
+                                token: {
+                                    colorPrimary: '#0d91a0',
+                                },
+                        }}>
+                        <Switch defaultChecked onChange={onChange}checkedChildren="Gauge" unCheckedChildren="
+                        PD" />
+                        </ConfigProvider>
                 </div>
                 <div className="view">
                     <img src={'image/sample3.png'} alt="" />

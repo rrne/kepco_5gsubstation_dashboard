@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 import {faUser, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import {useState} from 'react';
+  import { Modal } from 'antd';
 
 const StyledTopComp = styled.div`
     width: 100%;
@@ -78,6 +80,29 @@ const StyledTopComp = styled.div`
 `
 
 const TopComp = () => {
+    const [logout, setLogtout] = useState(false);
+    const [setting, setSetting] = useState(false);
+
+    const openLogout = () => {
+        setLogtout(true)
+    }
+    const handleCancelLogout = () => {
+        setLogtout(false)
+    }
+    const handleConfirmLogout = () => {
+        setLogtout(false)
+    }
+
+    const openSetting = () => {
+        setSetting(true)
+    }
+    const handleCancelSetting = () => {
+        setSetting(false)
+    }
+    const handleConfirmSetting = () => {
+        setSetting(false)
+    }
+
     return(
         <StyledTopComp>
             <img src={"/image/header.png"} alt="" className='bg'/>
@@ -98,15 +123,139 @@ const TopComp = () => {
                             <div className="position">보안 안전팀</div>
                         </div>
                     </div>
-                    <div className="setting icon">
+                    <div className="setting icon" onClick={openSetting}>
                         <FontAwesomeIcon icon={faGear}/>
                     </div>
-                    <div className="logout icon">
+                    <div className="logout icon" onClick={openLogout}>
                         <FontAwesomeIcon icon={faRightFromBracket}/>
                     </div>
                 </div>
             </div>
+            <Modal open={logout} footer={null} closable={false}>
+                <LogoutModal cancel={handleCancelLogout} confirm={handleConfirmLogout}/>
+            </Modal>
+            <Modal open={setting} footer={null} closable={false}>
+                <SettingModal cancel={handleCancelSetting} confirm={handleConfirmSetting}/>
+            </Modal>
         </StyledTopComp>
     )
 }
 export default TopComp;
+
+const StyledLogoutModal = styled.div`
+    width: 300px;
+    border: 1px solid white;
+    padding: 16px 12px;
+    border-radius: 8px;
+    background: #001427d6;
+    border: 1px solid #0096a7;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .title{
+        font-size:16px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    .btn-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        .btn{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            border-radius: 20px;
+            background: #003353b5;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid #287d9e;
+            &:hover{
+                color: #4FE7F8;
+                border: 1px solid #4FE7F8;
+                background: #004561b5;
+            }
+            
+          
+        }
+    }
+`
+
+const LogoutModal = ({cancel, confirm}:{cancel:() => void, confirm:() => void}) => {
+    return(
+        <StyledLogoutModal>
+            <div className="title">
+                로그아웃 하시겠습니까?
+            </div>
+            <div className="btn-box">
+                <div className="btn confirm" onClick={confirm}>확인</div>
+                <div className="btn cancel" onClick={cancel}>취소</div>
+            </div>
+        </StyledLogoutModal>
+    )
+}
+
+
+const StyledSettingModal = styled.div`
+    width: 300px;
+    border: 1px solid white;
+    padding: 16px 12px;
+    border-radius: 8px;
+    background: #001427d6;
+    border: 1px solid #0096a7;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .title{
+        font-size:16px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    .btn-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        .btn{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            border-radius: 20px;
+            background: #003353b5;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid #287d9e;
+            &:hover{
+                color: #4FE7F8;
+                border: 1px solid #4FE7F8;
+                background: #004561b5;
+            }
+            
+          
+        }
+    }
+`
+const SettingModal = ({cancel, confirm}:{cancel:() => void, confirm:() => void}) => {
+    return(
+        <StyledSettingModal>
+            <div className="title">
+                설정
+            </div>
+            <div className="btn-box">
+                <div className="btn confirm" onClick={confirm}>확인</div>
+                <div className="btn cancel" onClick={cancel}>취소</div>
+            </div>
+        </StyledSettingModal>
+    )
+}

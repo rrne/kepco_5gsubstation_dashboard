@@ -30,18 +30,28 @@ const common = css`
     }
     .ant-select-dropdown{
         padding: 0;
-        background: #023949;
+        background: #001427cc;
         color: white;
         font-size: 14px;
-        border-radius: 6px;
+        border-radius: 0px;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        border: 1px solid #30ccdd;
         .ant-select-item {
             color:white;
+            border-bottom: 1px solid #4fe7f822;
+            &:last-of-type{
+                                border:none ;
+                            }
         }
         :where(.css-dev-only-do-not-override-1s3dcof).ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
-            background: #007485;
+            background: #00f7ff6a;
             color: white;
+            border-radius: 0
         }
+    }
+    .ant-modal{
+        .ant-modal-content{padding: 0; background:none; display:flex;justify-content:center;
+        box-shadow:none}
     }
 `
 export default common;
