@@ -15,7 +15,7 @@ const main = css`
         padding: 4px 16px 16px;
         .top-box{
             width: 100%;
-            height:40px;
+            height:30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -59,7 +59,7 @@ const main = css`
 
         .main-view{
             width:100%;
-            height: calc(100% - 50px);
+            height: calc(100% - 40px);
             position: relative;
             padding: 10px;
             .bg-box{

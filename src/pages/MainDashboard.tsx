@@ -4,6 +4,8 @@ import BoxFrame from '@src/components/BoxFrame';
 import BigBoxFrame from '@src/components/BigBoxFrame';
 import main from '@src/style/main';
 import BottomPannel from '@src/components/BottomPannel';
+import EventStatusPannel from '@src/components/EventStatusPannel';
+import SensorStatusPannel from '@src/components/SensorStatusPannel';
 
 const MainDashboard = () => {
     return(
@@ -15,6 +17,8 @@ const MainDashboard = () => {
                     <BigBoxFrame />
                     <div className="bg-box">
                     <img src={"/image/unity.png"} alt="" className="unity" />
+                    <EventStatusPannel/>
+                    <SensorStatusPannel/>
                     <BottomPannel />
                     </div>
                 </div>

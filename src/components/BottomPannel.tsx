@@ -76,7 +76,7 @@ const StyledRobotStatusPannel = styled.div`
                 display: flex;
                 border: 1px solid #0097AC;
                 .tap{
-                    padding: 6px 20px;
+                    padding: 6px 12px;
                     color: rgba(255,255,255,0.5);
                     font-size: 14px;
                     font-weight: 600;
