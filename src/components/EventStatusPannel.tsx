@@ -1,8 +1,8 @@
-import PannelBoxFrame from "./PannelBoxFrame";
+import PannelBoxFrame from "@src/components/frame/PannelBoxFrame";
 import styled from "@emotion/styled";
 import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BoxFrame from "./BoxFrame";
+import BoxFrame from "@src/components/frame/BoxFrame";
 import EventStatus from '@src/data/eventStatus.json';
 import {useState, useEffect} from 'react'
 
@@ -80,17 +80,27 @@ const StyledEventStatusPannel = styled.div`
                         border-radius: 20px;
                         cursor: pointer;
                         transition: 0.2s;
+                        background: #0b2b38;
+                        border:1px solid #216269;
+                        color: #6daab1;
+
                         &.critical{
-                            background: #F62E00;
+                            background: #a51e00;
+                            border:1px solid #f60800;
+                            color: #ffd7d0;
                         }
                         &.major{
-                            background: #F46700;
+                            background: #a74500;
+                            border:1px solid #ff6b01;
+                            color: #ffe6d0;;
                         }
                         &.minor{
-                            background: #e0ac00;
+                            background: #aa8200;
+                            border:1px solid #fac000;
+                            color: #fffcdc;;
                         }
                         &:hover{
-                            opacity: 0.7;
+                            opacity: 0.85;
                         }
                     }
                 }
@@ -136,6 +146,7 @@ const StyledEventStatusPannel = styled.div`
                 }
                 .tbody{
                     width: 100%;
+                    height: calc(100% - 30px);
                     overflow-y: scroll;
                     .tr{
                         width: 100%;
@@ -199,9 +210,36 @@ type TypeEventStatue = {
 
 const EventStatusPannel = () => {
     const [event, setEvent] = useState<TypeEventStatue[] | null>(null);
+
+    const [legend, setLegend] = useState({
+        critical:true,
+        major:true,
+        minor:true
+    })
+
     useEffect(() => {
-        setEvent(EventStatus)
-    },[])
+        const data = [...EventStatus]
+        if(!data) return;
+        const dataArr = [];
+
+        if(legend.critical){
+            for(let i = 0; i < data.length; i++){
+                if(data[i].status === "critical") dataArr.push(data[i])
+            }
+        }
+        if(legend.major){
+            for(let i = 0; i < data.length; i++){
+                if(data[i].status === "major") dataArr.push(data[i])
+            }
+        }
+        if(legend.minor){
+            for(let i = 0; i < data.length; i++){
+                if(data[i].status === "minor") dataArr.push(data[i])
+            }
+        }
+
+        setEvent(dataArr)
+    },[legend])
 
     return(
         <StyledEventStatusPannel>
@@ -222,9 +260,11 @@ const EventStatusPannel = () => {
                             <div className="title">알람등급</div>
                         </div>
                         <div className="legend-box">
-                            <div className="legend critical">Critical</div>
-                            <div className="legend major">Magjor</div>
-                            <div className="legend minor">Minor</div>
+                            <div className={legend.critical ? "legend critical" : "legend"} onClick={() => {setLegend({...legend, critical:!legend.critical})}} >Critical</div>
+
+                            <div className={legend.major ? "legend major" : "legend"} onClick={() => {setLegend({...legend, major:!legend.major})}}>Major</div>
+
+                            <div className={legend.minor ? "legend minor" : "legend"} onClick={() => {setLegend({...legend, minor:!legend.minor})}}>Minor</div>
                         </div>
                     </div>
                     <div className="table">

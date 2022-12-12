@@ -1,4 +1,4 @@
-import PannelBoxFrame from "./PannelBoxFrame";
+import PannelBoxFrame from "@src/components/frame/PannelBoxFrame";
 import styled from "@emotion/styled";
 import {useState, useEffect} from 'react';
 import SensorStatus from '@src/data/sensorStatus.json';

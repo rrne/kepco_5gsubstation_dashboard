@@ -28,6 +28,11 @@ const common = css`
     ::-webkit-scrollbar-track {
     background: #022435;  /*스크롤바 뒷 배경 색상*/
     }
+
+    ::selection {
+		background-color: transparent;
+	}
+
     .ant-select-dropdown{
         padding: 0;
         background: #001427cc;

@@ -1,11 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import TopComp from '@src/components/TopComp';
-import BoxFrame from '@src/components/BoxFrame';
-import BigBoxFrame from '@src/components/BigBoxFrame';
+import BoxFrame from '@src/components/frame/BoxFrame';
+import BigBoxFrame from '@src/components/frame/BigBoxFrame';
 import main from '@src/style/main';
 import BottomPannel from '@src/components/BottomPannel';
 import EventStatusPannel from '@src/components/EventStatusPannel';
 import SensorStatusPannel from '@src/components/SensorStatusPannel';
+import { MainUnityView } from '@src/components/unity';
 
 const MainDashboard = () => {
     return(
@@ -16,10 +17,10 @@ const MainDashboard = () => {
                 <div className="main-view">
                     <BigBoxFrame />
                     <div className="bg-box">
-                    <img src={"/image/unity.png"} alt="" className="unity" />
-                    <EventStatusPannel/>
-                    <SensorStatusPannel/>
-                    <BottomPannel />
+                        <MainUnityView />
+                        <EventStatusPannel/>
+                        <SensorStatusPannel/>
+                        <BottomPannel />
                     </div>
                 </div>
             </section>

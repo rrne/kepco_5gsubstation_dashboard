@@ -1,0 +1,144 @@
+{
+    "gauge":[
+        {
+            "sensorKey":1,
+            "title":"Sensor1",
+            "status":"normal",
+            "data": -54
+        },
+        {
+            "sensorKey":2,
+            "title":"Sensor2",
+            "status":"normal",
+            "data": 34
+        },
+        {
+            "sensorKey":3,
+            "title":"Sensor3",
+            "status":"normal",
+            "data": 27
+        }
+    ],
+    "pd":[
+        {
+            "sensorKey":1,
+            "title":"Sensor1",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.61
+        },
+        {
+            "sensorKey":2,
+            "title":"Sensor2",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.43
+        },
+        {
+            "sensorKey":3,
+            "title":"Sensor3",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.25
+        },
+        {
+            "sensorKey":4,
+            "title":"Sensor4",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.67
+        },
+        {
+            "sensorKey":5,
+            "title":"Sensor5",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.25
+        },
+        {
+            "sensorKey":6,
+            "title":"Sensor6",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.34
+        },
+        {
+            "sensorKey":7,
+            "title":"Sensor7",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.76
+        },
+        {
+            "sensorKey":8,
+            "title":"Sensor8",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.45
+        },
+        {
+            "sensorKey":9,
+            "title":"Sensor9",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.67
+        },
+        {
+            "sensorKey":10,
+            "title":"Sensor10",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.25
+        },
+        {
+            "sensorKey":11,
+            "title":"Sensor11",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.34
+        },
+        {
+            "sensorKey":12,
+            "title":"Sensor12",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.76
+        },
+        {
+            "sensorKey":13,
+            "title":"Sensor13",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.45
+        },
+        {
+            "sensorKey":14,
+            "title":"Sensor14",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.56
+        },
+        {
+            "sensorKey":15,
+            "title":"Sensor15",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.29
+        },
+        {
+            "sensorKey":16,
+            "title":"Sensor16",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.67
+        },
+        {
+            "sensorKey":17,
+            "title":"Sensor17",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.46
+        },
+        {
+            "sensorKey":18,
+            "title":"Sensor18",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.95
+        },
+        {
+            "sensorKey":19,
+            "title":"Sensor19",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.68
+        },
+        {
+            "sensorKey":20,
+            "title":"Sensor20",
+            "time":"2022-11-23 10:30:54",
+            "data": 0.57
+        }
+    ]
+}

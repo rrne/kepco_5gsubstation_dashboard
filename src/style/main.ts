@@ -67,9 +67,6 @@ const main = css`
                 height: 100%;
                 overflow: hidden;
                 position: relative;
-                .unity{
-                width: 100%;
-            }
             }
         }
     }
