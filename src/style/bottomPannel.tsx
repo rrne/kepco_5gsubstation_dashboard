@@ -64,9 +64,15 @@ export const StyledRobotStatusPannel = styled.div`
                     padding-inline: 12px;
                     font-weight: 600;
                     &.ant-radio-button-wrapper-checked{
-                        background: #001f4b;
-                        color: #398bff;
-                       
+                        background: #00334b;
+                        color: #4FE7F8;
+                        border: 1px solid #23a9b8;
+                        &::before{
+                            background: #23a9b8;
+                        }
+                    }
+                    &:hover{
+                        color: #4FE7F8;
                     }
                 }
             }
@@ -185,13 +191,16 @@ export const StyledNeckBandCameraPannel = styled.div`
             width: 24px;
             height: 24px;
             position: relative;
-            color: #4FE7F8;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             transition: 0.2s;
             font-size: 14px;
+            .link{
+                color: #4FE7F8;
+
+            }
             &:hover{
                 opacity: 0.7;
             }

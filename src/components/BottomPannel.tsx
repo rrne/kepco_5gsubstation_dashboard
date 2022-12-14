@@ -157,7 +157,7 @@ const NeckBandCameraPannel = () => {
                     </div>
                     <div className="icon-box" onClick={openWindowProgram}>
                         <BoxFrame/>
-                       <FontAwesomeIcon icon={faLink} />
+                        <a href="test://" className="link"><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                 </div>
                 <div className="view cameraView">
