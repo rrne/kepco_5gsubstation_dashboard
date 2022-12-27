@@ -3,6 +3,7 @@ import {faUser, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-i
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import {useState} from 'react';
   import { Modal } from 'antd';
+  import { useNavigate } from 'react-router-dom';
 
 const StyledTopComp = styled.div`
     width: 100%;
@@ -21,7 +22,6 @@ const StyledTopComp = styled.div`
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         padding: 0 40px;
         padding-bottom: 4px;
         .logo-box{
@@ -31,9 +31,13 @@ const StyledTopComp = styled.div`
             }
         }
         .title-box{
+            width: 60%;
             font-size: 24px;
             color: white;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .user-box{
             width: 20%;
@@ -80,11 +84,14 @@ const StyledTopComp = styled.div`
 `
 
 interface TopcompProps {
-    title?: string
+    title?: string;
+    login?:boolean
 }
-const TopComp = ({title = ""}:TopcompProps) => {
+const TopComp = ({title = "", login = false}:TopcompProps) => {
     const [logout, setLogtout] = useState(false);
     const [setting, setSetting] = useState(false);
+
+    const router = useNavigate();
 
     const openLogout = () => {
         setLogtout(true)
@@ -94,6 +101,7 @@ const TopComp = ({title = ""}:TopcompProps) => {
     }
     const handleConfirmLogout = () => {
         setLogtout(false)
+        router('/login')
     }
 
     const openSetting = () => {
@@ -116,7 +124,7 @@ const TopComp = ({title = ""}:TopcompProps) => {
                 <div className="title-box">
                     IoT기반 {title}변전소 실시간 감시서비스
                 </div>
-                <div className="user-box">
+                {login ? "" : <div className="user-box">
                     <div className="user">
                         <div className="user-icon">
                         <FontAwesomeIcon icon={faUser}/>
@@ -132,7 +140,7 @@ const TopComp = ({title = ""}:TopcompProps) => {
                     <div className="logout icon" onClick={openLogout}>
                         <FontAwesomeIcon icon={faRightFromBracket}/>
                     </div>
-                </div>
+                </div>}
             </div>
             <Modal open={logout} footer={null} closable={false}>
                 <LogoutModal cancel={handleCancelLogout} confirm={handleConfirmLogout}/>

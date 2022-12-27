@@ -15,22 +15,22 @@ const StyledFrame = styled.div`
         position: absolute;
         z-index: 1;
         &.top-L{
-            top:-4px;
-            left:-4px;
+            top:-6px;
+            left:-6px;
             transform: rotate(-90deg);
         }
         &.top-R{
-            top:-4px;
-            right:-4px;
+            top:-6px;
+            right:-6px;
         }
         &.bottom-L{
-            bottom:-4px;;
-            left:-4px;;
+            bottom:-6px;;
+            left:-6px;;
             transform: rotate(-180deg);
         }
         &.bottom-R{
-            bottom:-4px;;
-            right:-4px;
+            bottom:-6px;;
+            right:-6px;
             transform: rotate(-270deg);
         }
     }
