@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import MainDashboard from '@src/pages/MainDashboard';
+import OsongDashboard from '@src/pages/OsongDashboard';
 import NotFound from '@src/pages/MainDashboard';
 import { Global } from '@emotion/react';
 import reset from '@src/style/reset';
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainDashboard/>}></Route>
+          <Route path="/osong" element={<OsongDashboard/>}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>

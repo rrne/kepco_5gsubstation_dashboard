@@ -1,0 +1,34 @@
+[
+    {
+        "title":"외곽 CCTV #1",
+        "data":{
+            "person":0,
+            "fall":2,
+            "safehat":2
+        }
+    },
+    {
+        "title":"외곽 CCTV #2",
+        "data":{
+            "person":1,
+            "fall":0,
+            "safehat":0
+        }
+    },
+    {
+        "title":"외곽 CCTV #3",
+        "data":{
+            "person":0,
+            "fall":1,
+            "safehat":1
+        }
+    },
+    {
+        "title":"외곽 CCTV #4",
+        "data":{
+            "person":3,
+            "fall":0,
+            "safehat":1
+        }
+    }
+]

@@ -63,17 +63,25 @@ export const StyledRobotStatusPannel = styled.div`
                     line-height: 28px;
                     padding-inline: 12px;
                     font-weight: 600;
+                    background: transparent;
+                    border: 1px solid #4FE7F8;
+                    color: #ffffff7f;
+                    box-shadow: 0 0 4px #4fe7f839;
+                   
                     &.ant-radio-button-wrapper-checked{
-                        background: #00334b;
-                        color: #4FE7F8;
-                        border: 1px solid #23a9b8;
+                        background: #0097AC;
+                        color: white;
+                        border: 1px solid #0097AC;
                         &::before{
-                            background: #23a9b8;
+                            background: transparent;
                         }
                     }
                     &:hover{
                         color: #4FE7F8;
                     }
+                    &::before{
+                            background: transparent;
+                        }
                 }
             }
             .view{

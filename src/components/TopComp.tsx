@@ -31,7 +31,7 @@ const StyledTopComp = styled.div`
             }
         }
         .title-box{
-            font-size: 26px;
+            font-size: 24px;
             color: white;
             font-weight: 600;
         }
@@ -79,7 +79,10 @@ const StyledTopComp = styled.div`
     }
 `
 
-const TopComp = () => {
+interface TopcompProps {
+    title?: string
+}
+const TopComp = ({title = ""}:TopcompProps) => {
     const [logout, setLogtout] = useState(false);
     const [setting, setSetting] = useState(false);
 
@@ -111,7 +114,7 @@ const TopComp = () => {
                     <img src={'/image/logo.png'} alt="" />
                 </div>
                 <div className="title-box">
-                    신중부변전소 종합관제시스템
+                    IoT기반 {title}변전소 실시간 감시서비스
                 </div>
                 <div className="user-box">
                     <div className="user">
