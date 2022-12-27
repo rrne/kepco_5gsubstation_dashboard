@@ -5,7 +5,7 @@ import BigBoxFrame from '@src/components/frame/BigBoxFrame';
 import { Input, message } from 'antd';
 import {faUser, faLock } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {useState} from 'react'
 
 const StyledLoginPage = styled.div`
