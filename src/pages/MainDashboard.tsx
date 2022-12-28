@@ -3,10 +3,10 @@ import TopComp from '@src/components/TopComp';
 import BoxFrame from '@src/components/frame/BoxFrame';
 import BigBoxFrame from '@src/components/frame/BigBoxFrame';
 import main from '@src/style/main';
-import BottomPannel from '@src/components/main-dashboard/BottomPannel';
-import EventStatusPannel from '@src/components/main-dashboard/EventStatusPannel';
-import SensorStatusPannel from '@src/components/main-dashboard/SensorStatusPannel';
-import { MainUnityView } from '@src/components/main-dashboard/unity';
+import BottomPannel from '@src/components/sinjungbu-dashboard/BottomPannel';
+import EventStatusPannel from '@src/components/sinjungbu-dashboard/EventStatusPannel';
+import SensorStatusPannel from '@src/components/sinjungbu-dashboard/SensorStatusPannel';
+import { MainUnityView } from '@src/components/sinjungbu-dashboard/unity';
 
 const MainDashboard = () => {
     return(
