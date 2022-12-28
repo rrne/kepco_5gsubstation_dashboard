@@ -18,7 +18,8 @@ const MainDashboard = () => {
                     <BigBoxFrame />
                     <div className="bg-box">
                         <MainUnityView />
-                        <EventStatusPannel/>
+                        {/* 🍭기존 퍼블리싱 => 좌측 이벤트패널 하단으로 이동 */}
+                        {/* <EventStatusPannel/> */}
                         <SensorStatusPannel/>
                         <BottomPannel />
                     </div>

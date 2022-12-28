@@ -43,7 +43,8 @@ const StyledEventStatusPannel = styled.div`
             flex:1;
             overflow: hidden;
             background: #00142788;
-            padding: 4px;
+            padding: 6px;
+            border-radius: 6px;
             .header{
                 width: 100%;
                 height: 30px;

@@ -7,9 +7,9 @@ import { Select } from 'antd';
 
 const StyledSensorStatusPannel = styled.div`
     width: 18%;
-    height: calc(70% - 10px);
+    height: calc(65% - 10px);
     position: absolute;
-    bottom: 30%;
+    bottom: 35%;
     right: 10px;
     z-index: 0;
     padding: 10px;

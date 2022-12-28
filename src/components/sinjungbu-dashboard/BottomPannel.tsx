@@ -13,6 +13,7 @@ import { recoilDashboardState } from '@src/states';
 import { motion } from "framer-motion";
 import SensorModalComp from "./SensorModalComp";
 import gaugeStatus from '@src/data/guageStatus.json';
+import EventStatusPannel from '@src/components/osong-dashboard/bottom-pannel/EventStatusPannel';
 
 // animation variations
 const variants = {
@@ -32,8 +33,12 @@ const BottomPannel = () => {
             <RobotStatusPannel/> 
             {/* 넥 밴드 카메라 패널 */}
             <NeckBandCameraPannel/>
-            {/* 게이지 & PD 모니터링 패널 */}
-            <GaugeMonitoringPannel/>
+            {/* 게이지 & PD 모니터링 패널
+            <GaugeMonitoringPannel/> */}
+            {/* 🍭기존 퍼블리싱 => 좌측 이벤트패널 하단으로 이동 */}
+            <div className="bottomView event">
+                <EventStatusPannel />
+            </div>
         </StyledBottomPannel>
     )
 }

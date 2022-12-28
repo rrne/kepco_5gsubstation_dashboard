@@ -6,7 +6,7 @@ export const StyledBottomPannel = styled.div`
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 30%;
+    height: 35%;
     z-index: 1;
     padding: 10px;
     display: flex;
@@ -41,6 +41,12 @@ export const StyledBottomPannel = styled.div`
                 width: 100%;
             }
         }
+        .bottomView{
+                position: relative;
+                height:100%;
+                width: 25%;
+            }          
+
 `
 
 // Robot Status & Camera
