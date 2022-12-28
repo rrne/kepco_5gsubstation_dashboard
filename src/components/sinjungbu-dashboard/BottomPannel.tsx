@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 import {faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BoxFrame from "@src/components/frame/BoxFrame";
-import { RobotUnityView } from "./unity";
+import { RobotUnityView } from "@src/components/unity";
 import { StyledBottomPannel, StyledRobotStatusPannel ,StyledNeckBandCameraPannel, StyledGaugeMonitoringPannel } from "@src/style/bottomPannel";
 import CCTVCameraView from "./CCTVCameraView";
 import { useRecoilState } from 'recoil';

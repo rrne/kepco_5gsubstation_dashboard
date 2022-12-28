@@ -2,15 +2,15 @@
 import TopComp from '@src/components/TopComp';
 import BoxFrame from '@src/components/frame/BoxFrame';
 import BigBoxFrame from '@src/components/frame/BigBoxFrame';
-import main from '@src/style/main';
+import sinjungbu from '@src/style/sinjungbu';
 import BottomPannel from '@src/components/sinjungbu-dashboard/BottomPannel';
 import EventStatusPannel from '@src/components/sinjungbu-dashboard/EventStatusPannel';
 import SensorStatusPannel from '@src/components/sinjungbu-dashboard/SensorStatusPannel';
-import { MainUnityView } from '@src/components/sinjungbu-dashboard/unity';
+import { MainUnityView } from '@src/components/unity';
 
 const MainDashboard = () => {
     return(
-        <div css={main}>
+        <div css={sinjungbu}>
             <TopComp title='신중부'/>
             <section className="main">
                 <MainTopBox/>

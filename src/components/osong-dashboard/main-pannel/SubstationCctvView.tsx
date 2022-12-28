@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import CCTVCameraView from "@src/components/osong-dashboard/CCTVCameraView";
-import substationCctv from '@src/data/substationCctv.json'
+import substationCctv from '@src/data/substationCctv.json';
+import SquareFrame from '@src/components/frame/SquareFrame'
 
 const StyledSubstationCCTV = styled.div`
     width: 100%;
@@ -20,28 +21,7 @@ const StyledSubstationCCTV = styled.div`
         display: flex;
         flex-direction: column;
         gap: 10px;
-        .frame{
-            position: absolute;
-            width: 17px;
-            height: 3px;
-            background: #1DCCE5;
-            &.top-L{
-                top: 0;
-                left: 0;
-            }
-            &.top-R{
-                top: 0;
-                right: 0;
-            }
-            &.bottom-L{
-                bottom: 0;
-                left: 0;
-            }
-            &.bottom-R{
-                bottom: 0;
-                right: 0;
-            }
-        }
+        
         .cctv-header{
             width: 100%;
             border-bottom: 1px solid #005575;
@@ -100,10 +80,7 @@ export default SubstationCctvView;
 const CctvViewComp = ({cctvInfo}:{ cctvInfo:CctvInfoType}) => {
     return(
         <div className="cctv-comp">
-            <div className="frame top-L"></div>
-            <div className="frame top-R"></div>
-            <div className="frame bottom-L"></div>
-            <div className="frame bottom-R"></div>
+            <SquareFrame/>
             <div className="cctv-header">
                 <div className="title">{cctvInfo.title}</div>
                 <div className="data-box">

@@ -1,7 +1,7 @@
 import PannelBoxFrame from "@src/components/frame/PannelBoxFrame";
 import styled from "@emotion/styled";
 import {useState, useEffect} from 'react';
-import SensorStatus from '@src/data/sensorStatus.json';
+import SensorStatus from '@src/data/sinjungbuSensorStatus.json';
 import { Select } from 'antd';
 
 

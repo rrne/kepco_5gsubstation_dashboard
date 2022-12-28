@@ -1,0 +1,104 @@
+[
+    {
+        "key":0,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":1,
+        "name":"오송S/S",
+        "sensor":"1층 #2 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":2,
+        "name":"오송S/S",
+        "sensor":"1층 #3 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":3,
+        "name":"오송S/S",
+        "sensor":"1층 #4 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":4,
+        "name":"오송S/S",
+        "sensor":"2층 23KV GIS실 #1",
+        "status":"normal"
+    },
+    {
+        "key":5,
+        "name":"오송S/S",
+        "sensor":"2층 23KV GIS실 #1",
+        "status":"normal"
+    },
+    {
+        "key":6,
+        "name":"오송S/S",
+        "sensor":"2층 23KV GIS실 #1",
+        "status":"normal"
+    },
+    {
+        "key":7,
+        "name":"오송S/S",
+        "sensor":"2층 23KV GIS실 #1",
+        "status":"normal"
+    },
+    {
+        "key":8,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":9,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":10,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":11,
+        "name":"오송S/S",
+        "sensor":"3층 통신실",
+        "status":"normal"
+    },
+    {
+        "key":12,
+        "name":"오송S/S",
+        "sensor":"외곽 정면",
+        "status":"normal"
+    },
+    {
+        "key":12,
+        "name":"오송S/S",
+        "sensor":"외곽 후면",
+        "status":"normal"
+    },
+    {
+        "key":13,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"warning"
+    },
+    {
+        "key":14,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"normal"
+    },
+    {
+        "key":15,
+        "name":"오송S/S",
+        "sensor":"1층 #1 M/Tr실",
+        "status":"normal"
+    }
+]

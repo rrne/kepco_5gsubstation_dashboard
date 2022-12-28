@@ -1,9 +1,9 @@
 import PannelBoxFrame from "@src/components/frame/PannelBoxFrame";
 import styled from "@emotion/styled";
 import {useState, useEffect} from 'react';
-import SensorStatus from '@src/data/sensorStatus.json';
+import SensorStatus from '@src/data/osongSensorStatus.json';
 import { Select } from 'antd';
-
+import { TypeSensorStatus } from "@src/types/dataType";
 
 const StyledSensorStatusPannel = styled.div`
     width: 100%;
@@ -178,12 +178,7 @@ const StyledSensorStatusPannel = styled.div`
         }
     }
 `
-type TypeSensorStatus = {
-    key: React.Key;
-    name: string;
-    sensor: string;
-    status: string;
-}
+
 
 const SensorControlView = () => {
     const [sensor, setSensor] = useState<null | TypeSensorStatus[]>(null);

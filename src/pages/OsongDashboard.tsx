@@ -3,7 +3,7 @@ import TopComp from '@src/components/TopComp';
 import BigBoxFrame from '@src/components/frame/BigBoxFrame';
 import osong from '@src/style/osong';
 import SensorControlView from '@src/components/osong-dashboard/main-pannel/SensorControlView';
-import { MainUnityView } from '@src/components/osong-dashboard/unity';
+import { MainUnityView } from '@src/components/unity';
 import SubstationCctvView from '@src/components/osong-dashboard/main-pannel/SubstationCctvView';
 import { MtrCctvPannel, GisCctvPannel, TempStatusPannel, EventStatusPannel } from '@src/components/osong-dashboard/bottom-pannel';
 
