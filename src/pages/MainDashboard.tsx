@@ -31,7 +31,7 @@ const MainDashboard = () => {
                             <div className="title">장애발생건수 (12월)</div>
                         </div>
                         <div className="box">
-                            <ErrorStatusPannel />
+                            <ErrorStatusPannel osong={osongSensorStatus} sinjungbu={sinjungbuSensorStatus}/>
                         </div>
                     </div>
                     {/* 🎈신중부변전소 센서관제 현황*/}

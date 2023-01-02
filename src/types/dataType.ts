@@ -4,3 +4,18 @@ export type TypeSensorStatus = {
     sensor: string;
     status: string;
 }
+
+export type TypeChartData = {
+    date:string;
+    value:number | null
+}
+
+export interface UserListType {
+    no: number;
+    id: string;
+    companyNum: string;
+    name: string;
+    position: string;
+    email: string;
+    time: string;
+}

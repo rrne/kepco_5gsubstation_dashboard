@@ -4,6 +4,7 @@ import OsongDashboard from '@src/pages/OsongDashboard';
 import SinjungbuDashboard from '@src/pages/SinjungbuDashboard'
 import LoginPage from './pages/LoginPage';
 import NotFound from '@src/pages/NotFound';
+import Administer from '@src/pages/Administer';
 
 import { Global } from '@emotion/react';
 import reset from '@src/style/reset';
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/" element={<MainDashboard/>}></Route>
+          <Route path="/admin" element={<Administer/>}></Route>
           <Route path="/osong" element={<OsongDashboard/>}></Route>
           <Route path="/sinjungbu" element={<SinjungbuDashboard/>}></Route>
           <Route path="*" element={<NotFound />}></Route>
