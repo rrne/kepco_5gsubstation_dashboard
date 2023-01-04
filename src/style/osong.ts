@@ -29,12 +29,18 @@ const osong = css`
                     width: 100%;
                     height: calc(100% - 40px);
                     padding: 10px;
+                    border: 1px solid #00385A;
                 }
                 &.unity{
                     width: 47%;
                 }
                 &.sensor{
                     width: 20%;
+                    .box{
+                        box-shadow: inset 0px 0px 60px rgba(0, 104, 201, 0.5);
+                        background: rgba(0, 20, 39, 0.8);
+                        border: 1px solid #007485;
+                    }
                 }
                 &.camera{
                     width: 33%;

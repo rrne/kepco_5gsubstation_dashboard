@@ -169,6 +169,19 @@ const Administer = () => {
                         ...rowSelection}} columns={columns} dataSource={userList} pagination={{pageSize:15, position: ["bottomCenter"], showSizeChanger:false}} tableLayout="auto" scroll={{y: "calc(100% - 50px)"}}
                         style={{height:"100%"}}
                         />
+                        <div className="button-box">
+                            <img src={"/image/excel.png"} alt="" className="excel btn" />
+                            <div className="del btn">삭제</div>
+                            <div className="register btn" onClick={() => openModifyModal({
+            no:0,
+            id:"",
+            companyNum:"",
+            name:"",
+            position:"",
+            email:"",
+            time:""
+    })}>사용자 등록</div>
+                        </div>
                     </div>
                     <Modal open={isModifyModalOpen} footer={null} closable={false}>
                         <UserModifyModal value={modifyData} close={closeModifyModal} />

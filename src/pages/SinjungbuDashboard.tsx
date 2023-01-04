@@ -2,11 +2,10 @@
 import TopComp from '@src/components/TopComp';
 import BoxFrame from '@src/components/frame/BoxFrame';
 import BigBoxFrame from '@src/components/frame/BigBoxFrame';
-import sinjungbu from '@src/style/sinjungbu';
-import BottomPannel from '@src/components/sinjungbu-dashboard/BottomPannel';
-import EventStatusPannel from '@src/components/sinjungbu-dashboard/EventStatusPannel';
-import SensorStatusPannel from '@src/components/sinjungbu-dashboard/SensorStatusPannel';
+import {sinjungbu} from '@src/style/sinjungbu';
+import SensorStatusPannel from '@src/components/sinjungbu-dashboard/main-pannel/SensorStatusPannel';
 import { MainUnityView } from '@src/components/unity';
+import { RobotStatusPannel, NeckBandCameraPannel, EventStatusPannel } from '@src/components/sinjungbu-dashboard/bottom-pannel';
 
 const MainDashboard = () => {
     return(
@@ -18,10 +17,14 @@ const MainDashboard = () => {
                     <BigBoxFrame />
                     <div className="bg-box">
                         <MainUnityView />
-                        {/* 🍭기존 퍼블리싱 => 좌측 이벤트패널 하단으로 이동 */}
-                        {/* <EventStatusPannel/> */}
                         <SensorStatusPannel/>
-                        <BottomPannel />
+                        <div className="bottom-pannel">
+                            <RobotStatusPannel/> 
+                            <NeckBandCameraPannel/>
+                            <div className="bottomView event">
+                                <EventStatusPannel />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -115,6 +115,7 @@ const admin = css`
                 width: 100%;
                 height: calc(100% - 64px);
                 overflow: hidden;
+                position: relative;
                 .ant-spin-nested-loading{
                     height: calc(100% - 64px);
                     .ant-spin-container{
@@ -185,6 +186,37 @@ const admin = css`
                        a{
                         color:#4FE7F8;
                        }
+                    }
+                }
+                .button-box{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    display: flex;
+                    align-content: center;
+                    gap: 12px;
+                    .btn{
+                        cursor: pointer;
+                        transition: 0.25s;
+                        font-size: 14px;
+                        font-weight: 600;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                        &.del{
+                            background: linear-gradient(180deg, rgba(255, 80, 80, 0.4) 0%, rgba(255, 80, 80, 0) 100%);
+                            border: 1px solid #FF5050;
+                            border-radius: 6px;
+                            color: #FF5050;
+                            padding: 8px 16px;
+                        }
+                        &.register{
+                            background: linear-gradient(180deg, rgba(66, 255, 0, 0.4) 0%, rgba(93, 255, 37, 0) 100%, #5DFF25 100%);
+                            border: 1px solid #42FF00;
+                            border-radius: 6px;
+                            color: #42FF00;
+                            padding: 8px 16px;
+                        }
                     }
                 }
             }

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import PannelBoxFrame from "@src/components/frame/PannelBoxFrame";
-import CCTVCameraView from "@src/components/osong-dashboard/CCTVCameraView";
+import CCTVCameraView from "@src/components/CCTVCameraView";
 import { useState } from 'react';
 import BoxFrame from "@src/components/frame/BoxFrame";
 import { motion } from "framer-motion";

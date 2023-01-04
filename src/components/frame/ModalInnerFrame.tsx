@@ -10,7 +10,6 @@ const StyledPannelFrame = styled.div`
     border-radius: 4px;
     background: linear-gradient(to bottom, #00567511, #00567588 );
     box-shadow: inset 0 0 10px #0a9fc145;
-    border: 1px solid #005575;
     border-top: none;
     .box-edge{
         width: 12px;
@@ -19,23 +18,23 @@ const StyledPannelFrame = styled.div`
     }
     
     .bottom-L{
-        bottom: -1px;
-        left: -1px;
-        border-bottom: 2px solid #4FE7F8;
-        border-left: 2px solid #4FE7F8;
+        bottom: 0px;
+        left: 0px;
+        border-bottom: 1px solid #4fe7f881;
+        border-left: 1px solid #4fe7f881;
         border-bottom-left-radius: 2px;
     }
     .bottom-R{
-        bottom: -1px;
-        right: -1px;
-        border-bottom: 2px solid #4FE7F8;
-        border-right: 2px solid #4FE7F8;
+        bottom: 0px;
+        right: 0px;
+        border-bottom: 1px solid #4fe7f881;
+        border-right: 1px solid #4fe7f881;
         border-bottom-right-radius: 2px;
     }
 
     .blur{
-        filter: blur(3px);
-        -webkit-filter: blur(3px);
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
         border-color: #4FE7F8;
     }
 `

@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import TopComp from '@src/components/TopComp';
-import BoxFrame from '@src/components/frame/BoxFrame';
 import main from '@src/style/main';
 import { TempStatusPannel, EventStatusPannel, SpotmonioringPannel } from '@src/components/main-dashboard/bottom-pannel';
 import SensorStatusPannel from '@src/components/main-dashboard/main-pannel/SensorStatusPannel';

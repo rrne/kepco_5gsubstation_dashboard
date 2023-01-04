@@ -7,12 +7,8 @@ import EventStatus from '@src/data/eventStatus.json';
 import {useState, useEffect} from 'react'
 
 const StyledEventStatusPannel = styled.div`
-    width: 22%;
-    height: 32%;
-    position: absolute;
-    bottom: 30%;
-    left: 10px;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;

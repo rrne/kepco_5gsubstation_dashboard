@@ -19,3 +19,20 @@ export interface UserListType {
     email: string;
     time: string;
 }
+
+export type TypeGaugeStatus = {
+    key: React.Key;
+    name: string;
+    gauge: string;
+    status: string;
+    monitoring:{
+        prev:{
+            time:string;
+            value:number;
+        }
+        now:{
+            time:string;
+            value:number
+        }
+    }
+}

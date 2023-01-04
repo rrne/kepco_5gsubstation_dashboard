@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import CCTVCameraView from "@src/components/osong-dashboard/CCTVCameraView";
+import CCTVCameraView from "@src/components/CCTVCameraView";
 import substationCctv from '@src/data/substationCctv.json';
 import SquareFrame from '@src/components/frame/SquareFrame'
 

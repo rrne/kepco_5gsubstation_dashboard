@@ -1,4 +1,3 @@
-import PannelBoxFrame from "@src/components/frame/PannelBoxFrame";
 import styled from "@emotion/styled";
 import {useState, useEffect} from 'react';
 import SensorStatus from '@src/data/osongSensorStatus.json';
@@ -12,47 +11,6 @@ const StyledSensorStatusPannel = styled.div`
     flex-direction: column;
     gap: 10px;
 
-    .select-box{
-        width: 100%;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        .select{
-            width: 50%;
-            height: 100%;
-            align-items: center;
-            .ant-select{
-                    width: 100%;
-                    &.ant-select-open{
-                        .ant-select-selection-item{
-                            color: #1fa9b6;
-                    }
-                    }
-                    
-                    .ant-select-selector{
-                        box-shadow: none;
-                        padding: 0;
-                        background: linear-gradient(to bottom, #00385A, #00385a11);
-                        border: none;
-                        color: #4FE7F8;
-                        width: 100%;
-                        font-size: 12px;
-                        border: 1px solid #30ccdd;
-                        padding: 0 10px;
-                        border-radius: 0;
-                        
-                        
-                    }
-                    .ant-select-arrow{
-                        color: #4FE7F8;
-                    }
-                    .ant-select-selection-item{
-                        font-weight:600
-                    }
-                }
-        }
-    }
     .header-box{
         height: 20px;
         width: 100%;
@@ -67,7 +25,7 @@ const StyledSensorStatusPannel = styled.div`
     }
     .table{
         width: 100%;
-        height: calc(100% - 70px);
+        height: calc(100% - 30px);
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -187,52 +145,7 @@ const SensorControlView = () => {
     },[])
     return(
         <StyledSensorStatusPannel>
-            <div className="select-box">
-                <div className="select">
-                <Select
-                    defaultValue="전체보기"
-                    options={[
-                        {
-                        value: 'total',
-                        label: '전체보기',
-                        },
-                        {
-                        value: 'seven',
-                        label: '765Kv',
-                        },
-                        {
-                        value: 'three',
-                        label: '345Kv',
-                        }
-                        ]}/>
-                </div>
-                <div className="select">
-                <Select
-                    defaultValue="전체보기"
-                    options={[
-                        {
-                        value: 'total',
-                        label: '전체보기',
-                        },
-                        {
-                        value: 'five',
-                        label: '858ay',
-                        },
-                        {
-                        value: 'six',
-                        label: '868ay',
-                        },
-                        {
-                        value: 'seven',
-                        label: '878ay',
-                        },
-                        {
-                        value: 'eight',
-                        label: '888ay',
-                        }
-                        ]}/>
-                </div>
-            </div>
+           
             <div className="header-box">
                 <div className="data">GISPD : <span>0</span>/20</div>
                 <div className="data">MTRPD/OLTCPD : <span>0</span>/65</div>
